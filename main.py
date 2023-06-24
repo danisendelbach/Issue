@@ -27,11 +27,6 @@ class Book(db.Model):
     def __repr__(self):
         return f'<Book{self.id}>'
 #db = sqlite3.connect("books-collection.db")
-another_book = Book(
-    title="Harry Potter",
-    author="J.K. Rowling",
-    rating="9.7"
-)
 
 with app.app_context():
     db.create_all()
