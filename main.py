@@ -16,7 +16,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # initialize the app with the extension
 
 db = SQLAlchemy(app)
-migrate = Migrate(app, db)
+#migrate = Migrate(app, db)
 
 class Book(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
